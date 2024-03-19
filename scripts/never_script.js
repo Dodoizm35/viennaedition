@@ -1,17 +1,17 @@
 const questions = [{
-        q: "Sipped a Melange in one of Vienna's historic coffee houses, soaking in the city's renowned cafe culture."
+        q: "Sipped a Melange in one of Vienna's historic coffee houses."
     },
     {
-        q: "Strolled through the grand halls of the Schönbrunn Palace, imagining life as Austrian royalty."
+        q: "Strolled through the grand halls of the Schönbrunn Palace."
     },
     {
-        q: "Tasted an authentic Wiener Schnitzel at a traditional Viennese restaurant, comparing it to versions elsewhere."
+        q: "Tasted an authentic Wiener Schnitzel at a traditional Viennese restaurant."
     },
     {
-        q: "Enjoyed an evening at the Vienna State Opera, marveling at the world-class performances and opulent architecture."
+        q: "Enjoyed an evening at the Vienna State Opera."
     },
     {
-        q: "Ridden the giant Ferris wheel at the Prater amusement park, capturing panoramic views of the city's skyline."
+        q: "Ridden the giant Ferris wheel at the Prater amusement park."
     },
     {
         q: "Ate at Steirereck and tried their modern Tafelspitz."
@@ -20,7 +20,7 @@ const questions = [{
         q: "Enjoyed the iconic Wiener Schnitzel at Figlmüller."
     },
     {
-        q: "Sampled the famous Beinschinken sandwiches at Zum Schwarzen Kameel."
+        q: "Tasted the Beinschinken sandwich at Zum Schwarzen Kameel."
     },
     {
         q: "Had the Wiener Zwiebelrostbraten at Plachutta."
@@ -41,7 +41,7 @@ const questions = [{
         q: "Partied at Flex by the river."
     },
     {
-        q: "Enjoyed beach vibes at Tel Aviv Beach."
+        q: "Enjoyed beach vibes at Tel-Aviv Beach."
     },
     {
         q: "Discovered indie music at Rhiz."
@@ -83,7 +83,7 @@ const questions = [{
         q: "Watched an opera performance at the Vienna State Opera."
     },
     {
-        q: "Picnicked in the Stadtpark with a view of the Johann Strauss monument."
+        q: "Picnicked in the Stadtpark with a view of the J.Strauss monument."
     },
     {
         q: "Explored the Schönbrunn Palace's hidden gardens and mazes."
@@ -92,7 +92,7 @@ const questions = [{
         q: "Explored the vast collection of art at the Kunsthistorisches Museum."
     },
     {
-        q: "Discovered the wonders of science and technology at the Technisches Museum."
+        q: "Discovered the wonders of science at the Technisches Museum."
     },
     {
         q: "Admired modern and contemporary art at the (MUMOK)."
