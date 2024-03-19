@@ -1,7 +1,4 @@
 :root {
-    --background-color: #1a1a2e;
-    /* Karanlık bir arka plan gençlerin dikkatini çeker */
-    /* Açık renkli metin kontrast sağlar */
     --accent-color: #8f20c6;
     /* Canlı bir vurgu rengi, enerjik bir his verir */
     --secondary-accent-color: #ffffff;
@@ -12,16 +9,24 @@
     /* Başlıklar için koyu font ağırlığı */
     --text-font-weight: 400;
     /* Metin için normal font ağırlığı */
+    --background-image: url("pics/vienna.jpg");
 }
 
 body {
-    background-color: var(--background-color);
+    background-image: url("pics/vienna.jpg");
+    /* Görsel yolu doğruysa */
+    background-color: transparent;
+    /* Arka plan rengini kaldır */
     color: black;
     font-family: var(--font-family);
     margin: 0;
     padding: 5px;
     font-weight: bold;
     font-size: 30px;
+    background-size: cover;
+    /* Arka plan resmini kaplayacak şekilde ayarla */
+    background-position: center;
+    /* Resmi ortala */
 }
 
 h1 {
@@ -39,9 +44,9 @@ h1 {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.252);
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(161, 29, 29, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     height: 500px;
     /* Adjust width as needed */
@@ -50,7 +55,7 @@ h1 {
 .content:hover {
     transform: scale(1.02);
     /* Üzerine gelindiğinde büyüme efekti */
-    box-shadow: 0 12px 24px rgba(47, 2, 10, 0.7), 0 8px 8px rgba(233, 69, 96, 0.4);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7), 0 8px 8px rgb(0, 0, 0);
     /* Üzerine gelindiğinde gölgeyi güçlendirme */
 }
 
@@ -66,7 +71,6 @@ h1 {
     font-size: 1.8rem;
     text-align: center;
     color: var(--text-color);
-transition: transform 0.5s ease;
 }
 
 .button_container {
@@ -92,9 +96,9 @@ transition: transform 0.5s ease;
     background-color: var(--accent-color);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 40px 15px 40px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 15px;
     /* Daha yuvarlatılmış köşeler */
     transition: transform 0.2s ease;
     /* Hareketli bir geçiş */
@@ -116,7 +120,7 @@ transition: transform 0.5s ease;
 }
 
 .button_container .button {
-    font-size: 23px;
+    font-size: 18px;
     /* Düğmeler için font boyutu */
     text-decoration: none;
     /* Metin altı çizgisini kaldır */
@@ -140,7 +144,6 @@ transition: transform 0.5s ease;
 h1 {
     display: inline-block;
     animation: sway 5s ease-in-out infinite;
-   margin-left: 70px;
+    margin-left: 130px;
     /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
-
