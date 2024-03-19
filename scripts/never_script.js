@@ -286,6 +286,7 @@ function showNextQuestion() {
 
 // Düğme tıklama işlevselliği
 nextButton.addEventListener("click", showNextQuestion);
+questionText.addEventListener("click", showNextQuestion);
 
 // Swipe işlevselliği
 let touchstartX = 0;
