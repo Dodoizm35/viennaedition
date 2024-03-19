@@ -140,7 +140,7 @@ transition: transform 0.5s ease;
 h1 {
     display: inline-block;
     animation: sway 5s ease-in-out infinite;
-   margin-left: 80px;
+   margin-left: 70px;
     /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
 
