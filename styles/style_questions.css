@@ -3,7 +3,7 @@
     /* Canlı bir vurgu rengi, enerjik bir his verir */
     --secondary-accent-color: #ffffff;
     /* İkincil vurgu rengi, derinlik katar */
-    --font-family: 'Victor Mono', monospace;
+    --font-family: "Noto Sans Mono", monospace;
     /* Telex fontu ile modern bir dokunuş */
     --heading-font-weight: 600;
     /* Başlıklar için koyu font ağırlığı */
