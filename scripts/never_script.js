@@ -267,77 +267,54 @@ const questions = [{
     }
 ];
 
-// Soruların sırasını rastgele başlatma fonksiyonu
-function initialiseOrder(length) {
-    let order = [];
-    for (let i = 0; i < length; i++) {
-        order.push(i);
-    }
-    for (let i = length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [order[i], order[j]] = [order[j], order[i]];
-    }
-    return order;
-}
-
-// Rastgele sıralı soruları almak için
-let order = initialiseOrder(questions.length);
+const order = initialiseOrder(questions.length);
 let current = order.pop();
 
-// Soruyu göstermek için DOM elemanlarını almak
 const questionText = document.getElementById("question");
-questionText.innerHTML = questions[current].q;
-
-// 'Next' butonunu almak ve olay atayıcısı eklemek
 const nextButton = document.getElementById("next");
-nextButton.addEventListener("click", showNextQuestion);
 
-// Bir sonraki soruyu göstermek için fonksiyon
 function showNextQuestion() {
+    current = order.pop();
+    console.log(order.length);
     if (order.length === 0) {
         questionText.innerHTML = "The end";
-        // Sırayı tekrar başlat
-        order = initialiseOrder(questions.length);
-        current = order.pop();
+        order = initialiseOrder(questions.length); // Sırayı tekrar başlat
     } else {
-        current = order.pop();
         questionText.innerHTML = questions[current].q;
     }
-    // Kaydırma animasyonunu sıfırla
-    resetSwipeAnimation();
 }
 
-// Dokunma başlangıç ve bitiş koordinatlarını kaydetmek için
+// Düğme tıklama işlevselliği
+nextButton.addEventListener("click", showNextQuestion);
+
+// Swipe işlevselliği
 let touchstartX = 0;
 let touchendX = 0;
 
-// Dokunma olaylarına göre kaydırma yönünü belirlemek
 function handleSwipe() {
-    const threshold = 50; // Kaydırma eşiği
-    if (touchstartX - touchendX > threshold) {
-        showNextQuestion();
-    }
+    if (touchendX < touchstartX) showNextQuestion();
 }
 
-// Kaydırma animasyonunu tetikleyen fonksiyon
-function animateSwipe() {
-    questionText.style.transition = 'transform 0.5s ease';
-    questionText.style.transform = 'translateX(-100px)';
-}
-
-// Animasyonu sıfırlamak için fonksiyon
-function resetSwipeAnimation() {
-    questionText.style.transition = 'none';
-    questionText.style.transform = 'translateX(0)';
-}
-
-// Dokunma olayları için dinleyiciler
+// Kullanıcının dokunuşunu kaydet
 document.addEventListener('touchstart', e => {
     touchstartX = e.changedTouches[0].screenX;
 });
 
+// Kullanıcının dokunuşunu bıraktığı yeri kaydet ve yönlendirmeyi kontrol et
 document.addEventListener('touchend', e => {
     touchendX = e.changedTouches[0].screenX;
     handleSwipe();
-    animateSwipe();
 });
+
+function initialiseOrder(length) {
+    let order = [];
+    for (let i = 0; i < length; i++) {
+        order[i] = i;
+    }
+    // Diziyi karıştır
+    for (let i = length - 1; i > 0; i--) {
+        const randIndx = Math.floor(Math.random() * (i + 1));
+        [order[i], order[randIndx]] = [order[randIndx], order[i]];
+    }
+    return order;
+}
