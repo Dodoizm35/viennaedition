@@ -314,6 +314,27 @@ function handleSwipe() {
     }
 }
 
+function animateSwipeDirection() {
+    const content = document.querySelector('.content'); // İçeriği seç
+    content.style.transition = 'transform 0.5s ease'; // Animasyon süresi ve türü
+    content.style.transform = 'translateX(50px)'; // Sağa doğru kaydırma miktarı
+
+    // Animasyonun bitiminden sonra içeriği orijinal konumuna getir
+    setTimeout(() => {
+        content.style.transition = '';
+        content.style.transform = '';
+    }, 500); // 0.5 saniye sonra
+}
+
+// handleSwipe içinde showNextQuestion fonksiyonunu çağırırken bu fonksiyonu da çağır
+function handleSwipe() {
+    const threshold = 50; // Kaydırma için minimum mesafe
+    if (touchendX - touchstartX > threshold) {
+        showNextQuestion();
+        animateSwipeDirection(); // Kaydırma animasyonunu tetikle
+    }
+}
+
 
 function initialiseOrder(length) {
     let order = [];
