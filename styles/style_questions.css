@@ -18,7 +18,7 @@ body {
     color: black;
     font-family: var(--font-family);
     margin: 0;
-    padding: 0; /* Padding değerini düzelttim, negatif padding geçersizdir */
+    padding: 40px;
     font-weight: bold;
     font-size: 30px;
     background-size: cover; /* Resmi tam ekran yapar ve orantılı bir şekilde sığdırır */
@@ -159,7 +159,7 @@ h1 {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    padding: 5px 0px 10px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .logo-container img.logo {
