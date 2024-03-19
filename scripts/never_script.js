@@ -1,17 +1,17 @@
 const questions = [{
-        q: "Sipped a Melange in one of Vienna's historic coffee houses."
+        q: "Sipped a Melange in one of Vienna's historic coffee houses, soaking in the city's renowned cafe culture."
     },
     {
-        q: "Strolled through the grand halls of the Schönbrunn Palace."
+        q: "Strolled through the grand halls of the Schönbrunn Palace, imagining life as Austrian royalty."
     },
     {
-        q: "Tasted a Wiener Schnitzel at a traditional Viennese restaurant."
+        q: "Tasted an authentic Wiener Schnitzel at a traditional Viennese restaurant, comparing it to versions elsewhere."
     },
     {
-        q: "Enjoyed an evening at the Vienna State Opera."
+        q: "Enjoyed an evening at the Vienna State Opera, marveling at the world-class performances and opulent architecture."
     },
     {
-        q: "Ridden the giant Ferris wheel at the Prater amusement park."
+        q: "Ridden the giant Ferris wheel at the Prater amusement park, capturing panoramic views of the city's skyline."
     },
     {
         q: "Ate at Steirereck and tried their modern Tafelspitz."
@@ -315,27 +315,6 @@ function handleSwipe() {
     }
 }
 
-function animateSwipeDirection() {
-    const content = document.querySelector('.content'); // İçeriği seç
-    content.style.transition = 'transform 0.01s ease'; // Animasyon süresi ve türü
-    content.style.transform = 'translateX(450px)'; // Sağa doğru kaydırma miktarı
-
-    // Animasyonun bitiminden sonra içeriği orijinal konumuna getir
-    setTimeout(() => {
-        content.style.transition = '';
-        content.style.transform = '';
-    }, 500); // 0.5 saniye sonra
-}
-
-// handleSwipe içinde showNextQuestion fonksiyonunu çağırırken bu fonksiyonu da çağır
-function handleSwipe() {
-    const threshold = 50; // Kaydırma için minimum mesafe
-    if (touchendX - touchstartX > threshold) {
-        showNextQuestion();
-        animateSwipeDirection(); // Kaydırma animasyonunu tetikle
-    }
-}
-
 
 function initialiseOrder(length) {
     let order = [];
@@ -348,4 +327,9 @@ function initialiseOrder(length) {
         [order[i], order[randIndx]] = [order[randIndx], order[i]];
     }
     return order;
+}
+
+function toggleMenu() {
+    // Burada menü açma/kapatma işlevselliğini yönetecek kodları ekleyin
+    // Örnek olarak, menüyü göstermek/gizlemek için bir 'active' sınıfı ekleyip çıkarabilirsiniz
 }
