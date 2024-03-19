@@ -126,3 +126,21 @@ transition: transform 0.5s ease;
     text-decoration: none;
     /* Bağlantılarda alt çizgiyi kaldır */
 }
+
+@keyframes sway {
+    0%,
+    100% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+h1 {
+    display: inline-block;
+    animation: sway 5s ease-in-out infinite;
+    margin-left: 130px;
+    /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
+}
+
