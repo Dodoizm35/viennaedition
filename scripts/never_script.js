@@ -314,8 +314,8 @@ function handleSwipe() {
         showNextQuestion();
     }
     // Eğer soldan sağa doğru bir kaydırma işlemi algılanırsa ve önceki soruya dönmek istiyorsanız bu bölümü kullanın
-    // else if (touchendX - touchstartX > threshold) {
-    //     showPreviousQuestion(); // Bu fonksiyonu tanımlamanız gerekmekte
+    else if (touchendX - touchstartX > threshold) {
+    showPreviousQuestion(); // Bu fonksiyonu tanımlamanız gerekmekte
     // }
 }
 
