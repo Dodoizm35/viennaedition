@@ -142,7 +142,7 @@ h1 {
 h1 {
     display: inline-block;
     animation: sway 5s ease-in-out infinite;
-    margin-left: 60px;
+    margin-left: 55px;
     /* 5 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
 
