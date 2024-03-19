@@ -295,6 +295,24 @@ function handleSwipe() {
     if (touchendX < touchstartX) showNextQuestion();
 }
 
+function handleSwipe() {
+    const threshold = 50; // Kaydırma için minimum mesafe
+    if (touchstartX - touchendX > threshold) {
+        showNextQuestion();
+        animateSwipe();
+    }
+}
+
+// Kaydırma animasyonunu tetikleyen işlev
+function animateSwipe() {
+    questionText.style.transition = 'transform 0.5s ease';
+    questionText.style.transform = 'translateX(100px)'; // Sağa kaydırma efekti
+    setTimeout(() => {
+        questionText.style.transition = '';
+        questionText.style.transform = '';
+    }, 500); // Animasyon bitiminden sonra temizle
+}
+
 // Kullanıcının dokunuşunu kaydet
 document.addEventListener('touchstart', e => {
     touchstartX = e.changedTouches[0].screenX;
