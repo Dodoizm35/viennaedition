@@ -145,3 +145,60 @@ h1 {
     margin-left: 75px;
     /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1px;
+    width: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 5px 0px 10px 5px;
+}
+
+.logo-container img.logo {
+    height: 50px;
+    /* Logo boyutunu isteğe göre ayarlayın */
+}
+
+.menu-container .hamburger-menu {
+    font-size: var(--menu-icon-size);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.menu-container .hamburger-menu:hover {
+    background-color: var(--hover-background);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.top-bar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.top-bar a:hover {
+    background-color: var(--hover-background);
+}
+
+:root {
+    --gradient-start: #7b2ff7;
+    --gradient-end: #f107a3;
+    --hover-color: #ffffff;
+    --hover-background: rgba(255, 255, 255, 0.2);
+    --menu-icon-size: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
