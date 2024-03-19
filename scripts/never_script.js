@@ -316,8 +316,8 @@ function handleSwipe() {
 
 function animateSwipeDirection() {
     const content = document.querySelector('.content'); // İçeriği seç
-    content.style.transition = 'transform 0.5s ease'; // Animasyon süresi ve türü
-    content.style.transform = 'translateX(250px)'; // Sağa doğru kaydırma miktarı
+    content.style.transition = 'transform 0.1s ease'; // Animasyon süresi ve türü
+    content.style.transform = 'translateX(450px)'; // Sağa doğru kaydırma miktarı
 
     // Animasyonun bitiminden sonra içeriği orijinal konumuna getir
     setTimeout(() => {
