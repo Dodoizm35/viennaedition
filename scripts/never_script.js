@@ -1,17 +1,17 @@
 const questions = [{
-        q: "Sipped a Melange in one of Vienna's historic coffee houses, soaking in the city's renowned cafe culture."
+        q: "Sipped a Melange in one of Vienna's historic coffee houses."
     },
     {
-        q: "Strolled through the grand halls of the Schönbrunn Palace, imagining life as Austrian royalty."
+        q: "Strolled through the grand halls of the Schönbrunn Palace."
     },
     {
-        q: "Tasted an authentic Wiener Schnitzel at a traditional Viennese restaurant, comparing it to versions elsewhere."
+        q: "Tasted a Wiener Schnitzel at a traditional Viennese restaurant."
     },
     {
-        q: "Enjoyed an evening at the Vienna State Opera, marveling at the world-class performances and opulent architecture."
+        q: "Enjoyed an evening at the Vienna State Opera."
     },
     {
-        q: "Ridden the giant Ferris wheel at the Prater amusement park, capturing panoramic views of the city's skyline."
+        q: "Ridden the giant Ferris wheel at the Prater amusement park."
     },
     {
         q: "Ate at Steirereck and tried their modern Tafelspitz."
