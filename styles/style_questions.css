@@ -43,12 +43,12 @@ h1 {
     flex-direction: column;
     max-width: 400px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     background-color: rgba(255, 255, 255, 0.252);
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 500px;
+    height: 600px;
     /* Adjust width as needed */
 }
 
@@ -144,6 +144,6 @@ h1 {
 h1 {
     display: inline-block;
     animation: sway 5s ease-in-out infinite;
-    margin-left: 130px;
+    margin-left: 75px;
     /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
