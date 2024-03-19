@@ -306,6 +306,20 @@ document.addEventListener('touchend', e => {
     handleSwipe();
 });
 
+// Swipe işlevini kontrol etmek için işlevleri güncelle
+function handleSwipe() {
+    const threshold = 50; // Kaydırma için minimum mesafe
+    // Eğer sağdan sola doğru bir kaydırma işlemi algılanırsa bir sonraki soruyu göster
+    if (touchstartX - touchendX > threshold) {
+        showNextQuestion();
+    }
+    // Eğer soldan sağa doğru bir kaydırma işlemi algılanırsa ve önceki soruya dönmek istiyorsanız bu bölümü kullanın
+    // else if (touchendX - touchstartX > threshold) {
+    //     showPreviousQuestion(); // Bu fonksiyonu tanımlamanız gerekmekte
+    // }
+}
+
+
 function initialiseOrder(length) {
     let order = [];
     for (let i = 0; i < length; i++) {
