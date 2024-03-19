@@ -292,7 +292,7 @@ let touchstartX = 0;
 let touchendX = 0;
 
 function handleSwipe() {
-    if (touchendX < touchstartX) showNextQuestion();
+    if (touchendX > touchstartX) showNextQuestion();
 }
 
 document.addEventListener('touchstart', e => {
