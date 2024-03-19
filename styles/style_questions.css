@@ -61,10 +61,10 @@ h1 {
 
 .question_container {
     background-color: var(--secondary-accent-color);
-    padding: 20px;
-    margin-top: 110px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 80px;
     border-radius: 15px;
-    /* Yuvarlatılmış köşeler */
 }
 
 .question {
