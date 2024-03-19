@@ -116,7 +116,7 @@ transition: transform 0.5s ease;
 }
 
 .button_container .button {
-    font-size: 12px;
+    font-size: 23px;
     /* Düğmeler için font boyutu */
     text-decoration: none;
     /* Metin altı çizgisini kaldır */
