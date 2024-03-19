@@ -13,20 +13,26 @@
 }
 
 body {
-    background-image: url(pics/vienna.jpg); /* Arka plan resmi */
-    background-color: transparent; /* Arka plan rengi */
+    background-image: url(pics/vienna.jpg);
+    /* Arka plan resmi */
+    background-color: transparent;
+    /* Arka plan rengi */
     color: black;
     font-family: var(--font-family);
     margin: 0;
     padding-top: 40px;
+    /* Padding değerini düzelttim, negatif padding geçersizdir */
     font-weight: bold;
     font-size: 30px;
-    background-size: cover; /* Resmi tam ekran yapar ve orantılı bir şekilde sığdırır */
-    background-position: center; /* Resmi yatay ve dikey olarak ortalar */
-    background-repeat: no-repeat; /* Arka plan resminin tekrarlanmasını engeller */
-    background-attachment: fixed; /* Arka plan resmini sabitler, sayfa ile birlikte kaymaz */
+    background-size: cover;
+    /* Resmi tam ekran yapar ve orantılı bir şekilde sığdırır */
+    background-position: center;
+    /* Resmi yatay ve dikey olarak ortalar */
+    background-repeat: no-repeat;
+    /* Arka plan resminin tekrarlanmasını engeller */
+    background-attachment: fixed;
+    /* Arka plan resmini sabitler, sayfa ile birlikte kaymaz */
 }
-
 
 h1 {
     font-size: 2.5rem;
@@ -66,7 +72,7 @@ h1 {
 }
 
 .question {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     color: var(--text-color);
 }
@@ -93,15 +99,14 @@ h1 {
 .button {
     background-color: var(--accent-color);
     color: #fff;
-    border: none;
-    padding: 15px 40px 15px 40px;
+    border: 1px;
+    padding: 5px 30px 5px 30px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     /* Daha yuvarlatılmış köşeler */
     transition: transform 0.2s ease;
     /* Hareketli bir geçiş */
-    font-weight: bold;
-    /* Cesur buton metni */
+    font-weight: lighter;
 }
 
 .button:hover {
@@ -140,10 +145,9 @@ h1 {
 }
 
 h1 {
-    display: inline-block;
     animation: sway 5s ease-in-out infinite;
-    margin-left: 55px;
-    /* 5 saniyede bir tam döngü yapacak şekilde ayarlandı */
+    text-align: center;
+    /* 2 saniyede bir tam döngü yapacak şekilde ayarlandı */
 }
 
 .top-bar {
@@ -159,24 +163,19 @@ h1 {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    padding: 20px 10px 0px 10px;
+    padding: 5px;
 }
 
 .logo-container img.logo {
-    height: 30px;
-    /* Logo boyutunu isteğe göre ayarlayın */
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: -17px;
 }
 
 .menu-container .hamburger-menu {
     font-size: var(--menu-icon-size);
-    color: var(--text-color);
+    color: whitesmoke;
     cursor: pointer;
-}
-
-.menu-container .hamburger-menu:hover {
-    background-color: var(--hover-background);
-    border-radius: 5px;
-    padding: 5px;
 }
 
 .top-bar a {
@@ -193,9 +192,7 @@ h1 {
 :root {
     --gradient-start: #7b2ff7;
     --gradient-end: #f107a3;
-    --hover-color: #ffffff;
-    --hover-background: rgba(255, 255, 255, 0.2);
-    --menu-icon-size: 30px;
+    --menu-icon-size: 40px;
 }
 
 body {
