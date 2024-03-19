@@ -3,17 +3,17 @@
     /* Canlı bir vurgu rengi, enerjik bir his verir */
     --secondary-accent-color: #ffffff;
     /* İkincil vurgu rengi, derinlik katar */
-    --font-family: 'Telex', sans-serif;
+    --font-family: 'Victor Mono', monospace;
     /* Telex fontu ile modern bir dokunuş */
     --heading-font-weight: 600;
     /* Başlıklar için koyu font ağırlığı */
     --text-font-weight: 400;
     /* Metin için normal font ağırlığı */
-    --background-image: url("pics/vienna.jpg");
+    --background-image: url("pics/vienna-2.jpg");
 }
 
 body {
-    background-image: url(pics/vienna.jpg);
+    background-image: url(pics/vienna-2.jpg);
     /* Arka plan resmi */
     background-color: transparent;
     /* Arka plan rengi */
@@ -39,7 +39,7 @@ h1 {
     font-weight: var(--heading-font-weight);
     text-align: center;
     margin: 40px 0 20px;
-    color: var(--accent-color);
+    color: whitesmoke;
     /* Başlıklar için canlı bir renk */
 }
 
@@ -107,6 +107,7 @@ h1 {
     transition: transform 0.2s ease;
     /* Hareketli bir geçiş */
     font-weight: lighter;
+    font-family: var(--font-family);
 }
 
 .button:hover {
@@ -155,7 +156,7 @@ h1 {
     top: 0;
     left: 0;
     margin: 1px;
-    width: 100%;
+    width: 97.3%;
     border-radius: 5px;
     background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     display: flex;
@@ -168,7 +169,7 @@ h1 {
 
 .logo-container img.logo {
     height: 60px;
-    margin-top: 5px;
+    margin-top: -50px;
     margin-bottom: -17px;
 }
 
@@ -190,12 +191,7 @@ h1 {
 }
 
 :root {
-    --gradient-start: #7b2ff7;
-    --gradient-end: #f107a3;
+    --gradient-start: #7020f2;
+    --gradient-end: #f94ec0;
     --menu-icon-size: 40px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
